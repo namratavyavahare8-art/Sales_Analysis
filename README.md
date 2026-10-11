@@ -30,14 +30,23 @@ Exploratory data analysis (EDA) of an online retail dataset from India. The proj
 Visualization	Insight
 
  Age-group wise marital status count   : Singles outnumber married customers in every age group
+ 
  Count of sectors in each age group    : 26-35 is the largest group
+ 
  Gender and zone wise count            : Women outnumber men in every zone
+ 
  Total orders in each product category : Clothing, Food and Electronics lead
+ 
  Sector wise total amount              : IT, Healthcare, Aviation and Banking spend the most
+ 
  Sectors with total users              : IT Sector has the most users (1,588)
+ 
  State wise total amount               : Uttar Pradesh leads, Telangana is lowest
+ 
  Top 10 states by orders               : Uttar Pradesh (4,813), Maharashtra (3,811), Karnataka (3,241)
+ 
  Total orders in each age group        : 26-35 contributes about 41% of orders
+ 
  Zone wise users                      : Central zone has about 38% of users
 
 
