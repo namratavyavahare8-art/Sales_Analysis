@@ -1,6 +1,8 @@
 🛍️ Customer Sales Analysis
 
 Exploratory data analysis (EDA) of an online retail dataset from India. The project looks at who the customers are, where they are located, and what they buy, using visualizations built in Python.
+This EDA also explores customer demographics (age, gender, state) and purchase Amount to show who the customers are, where they are, and how much they spend. The findings can guide targeting and marketing decisions.
+
 
 
 
@@ -13,6 +15,8 @@ Exploratory data analysis (EDA) of an online retail dataset from India. The proj
  Find the most popular product categories
 
  Highlight growth opportunities and risks for the business
+
+ 
 
 
 
@@ -49,6 +53,15 @@ Visualization	Insight
  
  Zone wise users                      : Central zone has about 38% of users
 
+  Scatter (Age vs Amount)             :   Check for a relationship between age and spend
+
+  Histogram + KDE (Age)               :   Understand the age distribution
+
+  Box plot (Amount)                   :   Show spread, median and outliers in spending
+
+  Heatmap (State × Gender)           :   Compare customer counts by region and gender
+
+
 
 
 🔑 Key Findings
@@ -63,6 +76,19 @@ Risk: Sales depend heavily on a few states, age groups and categories.
 
 Opportunity: Grow the Eastern zone, male customers, the 46+ age groups, and weak sectors such as Agriculture and Textile.
 
+Age is concentrated in the late 20s to mid 30s. The distribution peaks at roughly 28 to 32 and is right-skewed. Counts drop sharply after about 56, and customers over 60 are sparse (under about 50 per bin).
+
+Age has no visible effect on spending. The scatter plot shows the same horizontal bands at every age, so age alone does not predict Amount.
+
+Amount clusters at discrete levels. Bands near ₹2k, 5k, 8k, 12k, 16k and 19–23k suggest fixed price points or product tiers, not a continuous spread.
+
+Spending is moderately right-skewed. The median is about ₹8,100 and the IQR runs from roughly ₹5,400 to ₹12,700. A few high-end outliers sit above about ₹23,500, and there are no low outliers.
+
+Women are the dominant group. They outnumber men by roughly 2 to 3 times in every state.
+
+Treat the 55+ segment as under-served, or check whether the drop reflects data collection limits.
+
+
 
 
 ✅ Recommendations
@@ -74,6 +100,26 @@ Invest in marketing in the Eastern zone and in under-performing states such as G
 Build campaigns for male customers and the 46+ age groups.
 
 Review low-performing categories and sectors to decide whether to promote or phase them out.
+
+
+
+
+✅Limitations and Next Steps
+
+The four plots describe the data but do not yet explain the spending bands or the drop after age 56.
+
+Check why the data thins out sharply after about 56 (binning, sampling, or real behavior).
+
+Compare Amount distributions by gender and state, not just counts.
+
+Add age groups (12–17, 18–25, 26–35, 36–55, 55+).
+
+Analyze product category, occupation or marital status if available.
+
+Run a correlation or hypothesis test (for example ANOVA) on Amount across gender and state.
+
+
+
 
 📊 Visualizations
 
@@ -119,7 +165,21 @@ Review low-performing categories and sectors to decide whether to promote or pha
 
     <img width="1228" height="607" alt="sectors_with_totalusers" src="https://github.com/user-attachments/assets/e6869b97-e5ec-419b-a15f-3802c12d2773" />
 
+11. HIST PLOT (AGE COUNT)
 
+<img width="581" height="432" alt="age_count" src="https://github.com/user-attachments/assets/df4675ac-d4ee-4fd8-9bc8-31f5447b71ba" />
+
+12. BOX PLOT (AMOUNT)
+
+<img width="1203" height="525" alt="amount_boxplot" src="https://github.com/user-attachments/assets/2a007672-e654-44b4-bfb3-82769fe5ce53" />
+
+13. SCATTER PLOT (AGE vs AMOUNT)
+
+<img width="1024" height="527" alt="age_amount_scatter" src="https://github.com/user-attachments/assets/7f43c370-9b03-49ad-b4d8-2721689d13fd" />
+
+14. PIVOT TABLE
+
+<img width="663" height="433" alt="pivot_table" src="https://github.com/user-attachments/assets/0e5e0a73-1c2d-4a9c-8fcc-3a3e0bb2b140" />
 
 
 
